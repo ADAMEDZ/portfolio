@@ -14,24 +14,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Adem Ghelous | Mechatronics Engineering Portfolio",
+  description: "State Engineer student at University of Sétif 1, Algeria. Specializing in Mechanical Manufacturing and AI Development. Building the intersection of moving mechanical parts and intelligent code.",
+  keywords: ["Mechatronics", "AI Developer", "Mechanical Engineering", "SolidWorks", "Python", "React", "OpenCV", "MediaPipe", "University of Sétif 1"],
+  authors: [{ name: "Adem Ghelous" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/logo.svg",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Adem Ghelous | Mechatronics Engineering Portfolio",
+    description: "State Engineer student specializing in Mechanical Manufacturing and AI Development",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Adem Ghelous | Mechatronics Engineering Portfolio",
+    description: "State Engineer student specializing in Mechanical Manufacturing and AI Development",
   },
 };
 
@@ -41,9 +39,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0f172a] text-white`}
       >
         {children}
         <Toaster />
