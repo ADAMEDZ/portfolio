@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Heart, ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
+import { Settings, Heart, ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -34,10 +34,8 @@ export default function Footer() {
               className="flex items-center gap-3"
               whileHover={{ scale: 1.02 }}
             >
-              <div className="relative flex items-center justify-center w-11 h-11">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl rotate-45 transform" />
-                <div className="absolute inset-[2px] bg-[#0a0f1a] rounded-lg rotate-45 transform" />
-                <span className="relative text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">AG</span>
+              <div className="relative flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 shadow-lg shadow-blue-500/30">
+                <Settings className="w-6 h-6 text-white animate-spin-slow" style={{ animationDuration: '8s' }} />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-bold text-lg tracking-tight text-white">ADEM</span>
