@@ -34,12 +34,10 @@ export default function Footer() {
               className="flex items-center gap-3"
               whileHover={{ scale: 1.02 }}
             >
-              <div className="relative flex items-center justify-center w-12 h-12 rounded-xl overflow-hidden border-2 border-blue-500/30 shadow-lg shadow-blue-500/20">
-                <img 
-                  src="/logo.png" 
-                  alt="Adem Ghelous Logo" 
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative flex items-center justify-center w-11 h-11">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl rotate-45 transform" />
+                <div className="absolute inset-[2px] bg-[#0a0f1a] rounded-lg rotate-45 transform" />
+                <span className="relative text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">AG</span>
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-bold text-lg tracking-tight text-white">ADEM</span>
